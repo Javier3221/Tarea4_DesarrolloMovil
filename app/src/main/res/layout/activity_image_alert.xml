@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".image_alert">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageBox"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/imageBox"
+            android:layout_below="@id/imageBox"
+            android:src="@drawable/ic_baseline_share_24"
+            android:background="@color/white"
+            android:id="@+id/shareButton"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:layout_below="@id/imageBox"
+            android:layout_toStartOf="@id/shareButton"
+            android:textSize="18dp"
+            android:padding="6dp"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

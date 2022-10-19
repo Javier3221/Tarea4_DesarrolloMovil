@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/main_screen_toolbar" android:id="@+id/toolbar"/>
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Welcome"
+                android:textAlignment="center"
+                android:id="@+id/tv1"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="1dp"
+                android:hint="@string/placeholder"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_margin="10dp"
+                android:id="@+id/et1"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/tv1"
+                android:layout_toEndOf="@+id/et1"
+                android:layout_marginTop="10dp"
+                android:background="@color/darker_purple"
+                android:padding="5dp"
+                android:id="@+id/rg1">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chk1"
+                    android:textColor="@color/white"
+                    android:id="@+id/chk1"
+                    android:layout_marginEnd="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/chk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chk2"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg1"
+                android:layout_marginTop="10dp"
+                android:text="@string/accessButton"
+                android:id="@+id/nextScreen"/>
+        </RelativeLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tarea 4</string>
+    <string name="Welcome">Welcome to my app, please specify your name:</string>
+    <string name="placeholder">Specify your name</string>
+    <string name="chk1">Male</string>
+    <string name="chk2">Female</string>
+    <string name="accessButton">Enter the app!</string>
+    <string name="ExitButton">Exit</string>
+    <string name="femaleText">Welcome Ms. placeholder, choose an option:</string>
+    <string name="maleText">Welcome Mr. placeholder, choose an option:</string>
+    <string name="todayImage">Show me today\'s image</string>
+    <string name="randomImage">Show me a random image</string>
+    <string name="share">Share this image!</string>
+</resources>
